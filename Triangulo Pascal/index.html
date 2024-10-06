@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIAGULO PASCAL</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #pascal-triangle{
+            text-align: center;
+        }
+        .row{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5px;
+        }
+        .cell{
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            margin: 2px;
+            border-radius: 5px;
+        }
+        button{
+            padding: 10px 20px;
+            font-size: 1rem;
+            margin: 20px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            background-color: #53a158;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" name="" id="pascal-input" placeholder="Introduce un numero">
+    <button onclick="displayPascalTriangle()">Generar</button>
+    <div id="pascal-triangle"></div>
+    <script>
+        
+function generatePascalTriangle(rows) {
+    const triangle = [];
+
+    for (let i = 0; i < rows; i++) {
+        triangle[i] = [];
+        triangle[i][0] = 1;
+
+        for (let j = 1; j < i; j++) {
+            triangle[i][j] = triangle[i - 1][j - 1] + triangle[i - 1][j];
+        }
+
+        triangle[i][i] = 1;
+    }
+
+    return triangle;
+}
+
+function displayPascalTriangle() {
+    //optiene el valor del input
+    const input = document.getElementById('pascal-input').value;
+    const rows = parseInt(input, 10);
+
+    //limpia el contenido del contenedor
+    const triangleContainer = document.getElementById('pascal-triangle');
+    triangleContainer.innerHTML = '';
+
+    //es para verificar si el valor es valido
+    if (isNaN(rows) || rows < 1) {
+        alert('Por favor, introduce un número entero positivo válido.');
+        return;
+    }
+
+    //aqui se genera y se muestra el triangulo de pascal
+    const triangle = generatePascalTriangle(rows);
+
+    triangle.forEach(row => {
+        const rowDiv = document.createElement('div');
+        rowDiv.classList.add('row');
+
+        row.forEach(num => {
+            const cellDiv = document.createElement('div');
+            cellDiv.classList.add('cell');
+            cellDiv.textContent = num.toString();
+            rowDiv.appendChild(cellDiv);
+        });
+
+        triangleContainer.appendChild(rowDiv);
+    });
+}
+    </script>
+</body>
+</html>

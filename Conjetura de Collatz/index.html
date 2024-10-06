@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conjetura de collatz</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: #f0f0f0;
+        }
+        #secuencia-collatz{
+            padding: 10px;
+            font-size: 1.2em;
+            color: #333;
+        }
+        input[type="number"]{
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 2px solid #ccc;
+        }
+        button{
+            padding: 10px 20px;
+            font-size: 1rem;
+            margin-top: 20px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            background-color: rgb(51, 99, 99);
+            cursor: pointer;
+        }
+        button:hover{
+            background-color:rgb(81, 160, 160) ;
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img src="./Collatz.png" alt="">
+    <h1>Conjetura de Collatz</h1>
+    <input type="number" id="collatz-input" placeholder="Introduce un numero" min="1">
+    <button onclick="generadorSecuencia()">Generar Secuencia</button>
+    <div id="secuencia-collatz"></div>
+    <div id="total"></div>
+
+    <script>
+        function collatz(n){
+            const secuencia = [n];
+            while(n !== 1){
+                if( n % 2 === 0){
+                    n = n /2;
+                }else{
+                    n = 3 * n + 1;
+                }
+                secuencia.push(n);
+            }
+            return secuencia;
+        }
+        function generadorSecuencia(){
+            const input = document.getElementById('collatz-input').value;
+            const number = parseInt(input,10);
+
+            if(isNaN(number) || number < 1){
+                alert('Ingrese un numero entero valido.');
+                return;
+            }
+
+            const secuencia = collatz(number);
+            document.getElementById('secuencia-collatz').textContent = `Secuencia: ${secuencia.join(' ')}`
+            document.getElementById('total').textContent = `Pasos: ${secuencia.length.toString()}`
+            
+        }
+    </script>
+</body>
+</html>

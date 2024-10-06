@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap');
+/* HEADER */
+*{
+    box-sizing: border-box;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eb5878;
+    padding: 10px;
+    z-index: 1000;
+    transition: padding 0.6s; /* Agregamos transición para el efecto */
+}
+
+.header.shrink {
+    padding: 5px; /* Modificamos el padding cuando se haga scroll */
+}
+.header.shrink .logo{
+    width: 100px;
+}
+
+.header .logo {
+    max-width: 150px; /* Ajusta el ancho máximo de la imagen según tu necesidad */
+    height: auto;
+}
+
+.header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.header li{
+    font-weight: 900;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-right: 20px; /* Espacio entre elementos de la lista */
+}
+
+.header .boton {
+    padding: 10px 60px;
+    background-color: #4bbb7f; /* Cambia esto al color de fondo que desees */
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* Hacer la barra de navegación responsive */
+@media screen and (min-width: 300px) and (max-width: 767px) {
+    .header {
+        display: flex;
+        justify-content: space-around;
+    }
+    .header li{
+        font-size: 20px;
+    }
+    .header .boton{
+        padding: 6px 30px;
+    }
+    .header .logo{
+        max-width: 100px;
+    }
+
+    .header ul {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .header ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .header .boton{
+        font-size: 20px;
+    }
+}
+/* TITULO SECUNDARIO */
+
+.titulo-secundario{
+    display: flex;
+    justify-content: center;
+    font-size: 35px ;
+    font-weight: 800;
+    padding: 200px 0 50px 0;
+    color: #eb5878;
+    font-family:"Edu NSW ACT Foundation", cursive ;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+    .titulo-secundario{
+        font-size:20px ;
+        text-align: center;
+    }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+    .titulo-secundario{
+        position: relative;
+        top: -40px;
+    }}
+/* VIDEO PRINCIPAL */
+.video-principal video{
+    width: 100%;
+    position: relative;
+}
+
+/* Texto principal */
+.texto-principal{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    background-color: azure;
+}
+.texto-principal h2{
+    font-size: 50px;
+    font-family: "Edu NSW ACT Foundation", cursive;
+    font-weight: 700;
+    color: #4bbb7f;
+}
+.texto-principal p{
+    font-size: 25px;
+    font-family: "Edu NSW ACT Foundation", cursive;
+    color: #4bbb7f;
+    text-align: center;
+    font-weight: 400;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+    .texto-principal{
+        text-align: center;
+    }
+    .texto-principal h2{
+        font-size: 20px;
+    }
+    .texto-principal p{
+        font-size: 15px;
+    }
+    .video-principal video{
+        position: relative;
+        top: -50px;
+    }
+}
+@media (max-width:768px ) {
+    .texto-principal h2{
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+/* bienvenida */
+
+.bienvenida{
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+    padding: 0 40px;
+}
+.bienvenida .texto{
+    /* padding: 70px 0; */
+    font-family: "Edu NSW ACT Foundation", cursive;
+}
+.bienvenida .texto h2{
+    font-size: 40px;
+}
+.bienvenida .texto strong{
+    color: #d53154;
+}
+.bienvenida .texto p{
+    font-size: 20px;
+}
+.bienvenida img{
+    width: 600px;
+}
+.bienvenida .p{
+    margin-bottom: 40px;
+}
+.bienvenida .boton2 {
+    padding: 10px 60px;
+    background-color: #eb5878; /* Cambia esto al color de fondo que desees */
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.bienvenida .boton2:hover{
+    background-color: #d53154;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+    .bienvenida{
+        flex-direction: column;
+        align-items: center;
+    }
+    .bienvenida img{
+        display: none;
+    }
+    .bienvenida .texto{
+        position: relative;
+        /* top: -50px; */
+    }
+}
+@media (min-width: 320px) and (max-width: 767px){
+    .bienvenida .texto h2{
+        font-size: 30px;
+        margin-bottom: 1.5rem;
+    }
+}
+@media (min-width: 1200px) and (max-width:1440px) {
+    .bienvenida{
+        margin: 10rem 0;
+    }
+}
+
+/* gallery */
+.galeria{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #eb5878;
+}
+.media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.media img,
+.media video {
+    width: 30%; /* Establece el ancho de las imágenes y videos en tres columnas */
+    margin: 5px; /* Añade espacio entre las imágenes y videos */
+    border-radius: 15px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+    .media img,
+        .media video {
+            width: 70%; /* Cambia el ancho a 90% para una sola columna en pantallas pequeñas */
+        }
+    .galeria{
+        margin-top: 100px;
+    }
+}
+/* FOOTER */
+footer{
+    display: flex;
+    justify-content: space-around;
+    font-family: "Edu NSW ACT Foundation", cursive;
+    background-color: #4bbb7f;
+    padding: 20px;
+}
+footer .nombre-footer{
+    text-align: center;
+}
+footer .nombre-footer h3{
+    font-size: 40px;
+    font-weight: 700;
+    color: white
+}
+footer .nombre-footer h4{
+    margin-top: 25px;
+    color: white;
+    font-size: 30px;
+}
+footer .logo-footer img{
+    width: 150px;
+}
+footer .iconos svg{
+    width: 80px;
+}
+footer .nombre-footer a{
+    text-decoration: none;
+    font-weight: 600;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+    footer .logo-footer img{
+        width: 90px;
+    }
+    footer .nombre-footer h3{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    footer .nombre-footer h4{
+        font-size: 20px;
+    }
+    footer .iconos svg{
+        width: 40px;
+    }
+}
+
