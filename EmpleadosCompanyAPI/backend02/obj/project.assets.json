@@ -487,11 +487,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\riche\\Documents\\AA TRABAJOS\\EmpleadosCompanyAPI\\backend02\\backend02.csproj",
+      "projectUniqueName": "C:\\Users\\riche\\Documents\\GitHub\\Projects\\EmpleadosCompanyAPI\\backend02\\backend02.csproj",
       "projectName": "backend02",
-      "projectPath": "C:\\Users\\riche\\Documents\\AA TRABAJOS\\EmpleadosCompanyAPI\\backend02\\backend02.csproj",
+      "projectPath": "C:\\Users\\riche\\Documents\\GitHub\\Projects\\EmpleadosCompanyAPI\\backend02\\backend02.csproj",
       "packagesPath": "C:\\Users\\riche\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\riche\\Documents\\AA TRABAJOS\\EmpleadosCompanyAPI\\backend02\\obj\\",
+      "outputPath": "C:\\Users\\riche\\Documents\\GitHub\\Projects\\EmpleadosCompanyAPI\\backend02\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\riche\\AppData\\Roaming\\NuGet\\NuGet.Config"

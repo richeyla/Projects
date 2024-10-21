@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\riche\\Documents\\GitHub\\Projects\\EmpleadosCompanyAPI\\backend02\\backend02.csproj": {}
+    "C:\\Users\\riche\\Documents\\AA TRABAJOS\\EmpleadosCompanyAPI\\miproyecto\\StremClass\\StremClass.csproj": {}
   },
   "projects": {
-    "C:\\Users\\riche\\Documents\\GitHub\\Projects\\EmpleadosCompanyAPI\\backend02\\backend02.csproj": {
+    "C:\\Users\\riche\\Documents\\AA TRABAJOS\\EmpleadosCompanyAPI\\miproyecto\\StremClass\\StremClass.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\riche\\Documents\\GitHub\\Projects\\EmpleadosCompanyAPI\\backend02\\backend02.csproj",
-        "projectName": "backend02",
-        "projectPath": "C:\\Users\\riche\\Documents\\GitHub\\Projects\\EmpleadosCompanyAPI\\backend02\\backend02.csproj",
+        "projectUniqueName": "C:\\Users\\riche\\Documents\\AA TRABAJOS\\EmpleadosCompanyAPI\\miproyecto\\StremClass\\StremClass.csproj",
+        "projectName": "StremClass",
+        "projectPath": "C:\\Users\\riche\\Documents\\AA TRABAJOS\\EmpleadosCompanyAPI\\miproyecto\\StremClass\\StremClass.csproj",
         "packagesPath": "C:\\Users\\riche\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\riche\\Documents\\GitHub\\Projects\\EmpleadosCompanyAPI\\backend02\\obj\\",
+        "outputPath": "C:\\Users\\riche\\Documents\\AA TRABAJOS\\EmpleadosCompanyAPI\\miproyecto\\StremClass\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\riche\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -42,16 +42,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "Microsoft.AspNetCore.OpenApi": {
-              "target": "Package",
-              "version": "[8.0.10, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.6.2, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -64,9 +54,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

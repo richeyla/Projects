@@ -1,0 +1,2 @@
+is is an example of writing to a file using streams.
+This is an example of writing to a file using streams.

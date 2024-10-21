@@ -1,0 +1,14 @@
+C:\Users\riche\Documents\AA TRABAJOS\EmpleadosCompanyAPI\miproyecto\StremClass\bin\Debug\net8.0\StremClass.exe
+C:\Users\riche\Documents\AA TRABAJOS\EmpleadosCompanyAPI\miproyecto\StremClass\bin\Debug\net8.0\StremClass.deps.json
+C:\Users\riche\Documents\AA TRABAJOS\EmpleadosCompanyAPI\miproyecto\StremClass\bin\Debug\net8.0\StremClass.runtimeconfig.json
+C:\Users\riche\Documents\AA TRABAJOS\EmpleadosCompanyAPI\miproyecto\StremClass\bin\Debug\net8.0\StremClass.dll
+C:\Users\riche\Documents\AA TRABAJOS\EmpleadosCompanyAPI\miproyecto\StremClass\bin\Debug\net8.0\StremClass.pdb
+C:\Users\riche\Documents\AA TRABAJOS\EmpleadosCompanyAPI\miproyecto\StremClass\obj\Debug\net8.0\StremClass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\riche\Documents\AA TRABAJOS\EmpleadosCompanyAPI\miproyecto\StremClass\obj\Debug\net8.0\StremClass.AssemblyInfoInputs.cache
+C:\Users\riche\Documents\AA TRABAJOS\EmpleadosCompanyAPI\miproyecto\StremClass\obj\Debug\net8.0\StremClass.AssemblyInfo.cs
+C:\Users\riche\Documents\AA TRABAJOS\EmpleadosCompanyAPI\miproyecto\StremClass\obj\Debug\net8.0\StremClass.csproj.CoreCompileInputs.cache
+C:\Users\riche\Documents\AA TRABAJOS\EmpleadosCompanyAPI\miproyecto\StremClass\obj\Debug\net8.0\StremClass.dll
+C:\Users\riche\Documents\AA TRABAJOS\EmpleadosCompanyAPI\miproyecto\StremClass\obj\Debug\net8.0\refint\StremClass.dll
+C:\Users\riche\Documents\AA TRABAJOS\EmpleadosCompanyAPI\miproyecto\StremClass\obj\Debug\net8.0\StremClass.pdb
+C:\Users\riche\Documents\AA TRABAJOS\EmpleadosCompanyAPI\miproyecto\StremClass\obj\Debug\net8.0\StremClass.genruntimeconfig.cache
+C:\Users\riche\Documents\AA TRABAJOS\EmpleadosCompanyAPI\miproyecto\StremClass\obj\Debug\net8.0\ref\StremClass.dll
