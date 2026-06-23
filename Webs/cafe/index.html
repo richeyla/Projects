@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/estilo.css">
+	<title>Cafe Encanto</title>
+</head>
+<body>
+
+	<nav class="navbar" id="navbar">
+		<div class="navbar-inner">
+			<a class="brand" href="#">Café <span>Encanto</span></a>
+			<button class="hamburger" id="hamburger" aria-label="Abrir menú">
+				<span></span><span></span><span></span>
+			</button>
+			<div class="nav-links" id="nav-links">
+				<a href="#" id="btn-acerca-de">Acerca de</a>
+				<a href="#" id="btn-menu">Menú</a>
+				<a href="#" id="btn-galeria">Galería</a>
+				<a href="#" id="btn-ubicacion">Ubicación</a>
+			</div>
+		</div>
+	</nav>
+
+	<header>
+		<div class="contenedor">
+			<div class="texto">
+				<h1 class="nombre">Café <span>Encanto</span></h1>
+				<h3>Donde cada sorbo es una historia, y cada aroma, un recuerdo.</h3>
+				<a href="#" id="btn-menu-cta" class="cta-btn">Ver nuestro menú</a>
+			</div>
+		</div>
+	</header>
+
+	<section class="main">
+		<section class="acerca-de fade-in" id="acerca-de">
+			<div class="contenedor">
+				<div class="foto">
+					<img src="imagen/acerca-de.jpg" alt="Interior del café">
+				</div>
+				<article>
+					<h3>Acerca de</h3>
+					<p>En Café Encanto, transformamos cada taza de café en una experiencia encantadora.
+					Nos dedicamos a brindar momentos memorables con nuestra cuidadosa selección de granos y
+					el ambiente acogedor que ofrecemos. Descubre el encanto en cada sorbo y únete a nosotros
+					para disfrutar de la magia del café.</p>
+				</article>
+			</div>
+		</section>
+
+
+		<section class="menu">
+			<div class="contenedor">
+				<h3 class="titulo fade-in" id="platillo">Menú</h3>
+				<div class="contenedor-menu">
+					<div class="contenedor-menu2">
+						<article class="fade-in">
+							<p class="categoria">De comer</p>
+							<div class="platillo">
+								<p class="nombre">Rollo de pollo mediterráneo</p>
+								<p class="precio">$15</p>
+								<p class="descripcion">Un delicioso rollo de pollo relleno con espinacas, queso feta y tomates secados al sol,
+								acompañado de una suave salsa de yogur y hierbas mediterráneas.</p>
+							</div>
+
+							<div class="platillo">
+								<p class="nombre">Emparedado vegano</p>
+								<p class="precio">$25</p>
+								<p class="descripcion">Un emparedado ligero y sabroso con aguacate cremoso, hummus casero,
+								hojas de espinaca fresca y tomates en pan integral.</p>
+							</div>
+
+							<div class="platillo">
+								<p class="nombre">Wrap de salmón ahumado</p>
+								<p class="precio">$35</p>
+								<p class="descripcion">Un wrap fresco con salmón ahumado, queso crema, pepino y eneldo,
+								todo envuelto en una tortilla de espinaca para un toque de color y sabor.</p>
+							</div>
+
+							<div class="platillo">
+								<p class="nombre">Ensalada de quinoa y vegetales asados</p>
+								<p class="precio">$45</p>
+								<p class="descripcion">Una ensalada saludable y abundante con quinoa, brócoli,
+								zanahorias y pimientos asados, aderezada con una vinagreta de limón y hierbas frescas.</p>
+							</div>
+						</article>
+
+						<article class="fade-in">
+							<p class="categoria">De Tomar</p>
+							<div class="platillo">
+								<p class="nombre">Espresso Éxtasis</p>
+								<p class="precio">$15</p>
+								<p class="descripcion">Una explosión intensa de sabor con nuestro Espresso Éxtasis,
+								una mezcla robusta de arábica y robusta para amantes del café fuerte.</p>
+							</div>
+
+							<div class="platillo">
+								<p class="nombre">Dulce Despertar Café</p>
+								<p class="precio">$25</p>
+								<p class="descripcion">Un café suave con toques de vainilla y caramelo,
+								el Dulce Despertar Café es la elección perfecta para quienes buscan una experiencia dulce.</p>
+							</div>
+
+							<div class="platillo">
+								<p class="nombre">Aventura Latte</p>
+								<p class="precio">$35</p>
+								<p class="descripcion">Nuestra creación única, el Aventura Latte, combina espresso,
+								leche espumosa, almendra y canela para una experiencia de sabor audaz y deliciosa.</p>
+							</div>
+
+							<div class="platillo">
+								<p class="nombre">Mocha Mágica</p>
+								<p class="precio">$45</p>
+								<p class="descripcion">Disfruta del equilibrio perfecto entre espresso,
+								leche vaporizada y chocolate belga en cada sorbo de nuestro Mocha Mágica.</p>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="galeria fade-in" id="galeria">
+			<div class="foto">
+				<img src="imagen/1.jpg" alt="Galería 1">
+				<div class="foto-overlay"><span>&#9654;</span></div>
+			</div>
+			<div class="foto">
+				<img src="imagen/2.jpg" alt="Galería 2">
+				<div class="foto-overlay"><span>&#9654;</span></div>
+			</div>
+			<div class="foto">
+				<img src="imagen/3.jpg" alt="Galería 3">
+				<div class="foto-overlay"><span>&#9654;</span></div>
+			</div>
+			<div class="foto">
+				<img src="imagen/4.jpg" alt="Galería 4">
+				<div class="foto-overlay"><span>&#9654;</span></div>
+			</div>
+			<div class="foto">
+				<img src="imagen/5.jpg" alt="Galería 5">
+				<div class="foto-overlay"><span>&#9654;</span></div>
+			</div>
+			<div class="foto">
+				<img src="imagen/6.jpg" alt="Galería 6">
+				<div class="foto-overlay"><span>&#9654;</span></div>
+			</div>
+			<div class="foto">
+				<img src="imagen/7.jpg" alt="Galería 7">
+				<div class="foto-overlay"><span>&#9654;</span></div>
+			</div>
+			<div class="foto">
+				<img src="imagen/8.jpg" alt="Galería 8">
+				<div class="foto-overlay"><span>&#9654;</span></div>
+			</div>
+		</section>
+
+		<section class="ubicacion fade-in" id="ubicacion">
+			<div class="contenedor">
+				<h3 class="titulo">Ubicación</h3>
+				<div class="direccion">
+					<p class="calle">&#128205; Capistrangasse 8, 1060 Wien, Austria</p>
+					<p class="telefono">&#128222; +1 (234) 323-2432</p>
+					<p class="correo">&#9993; tucorreo@correo.com</p>
+				</div>
+
+				<div class="horarios">
+					<h4>Horario</h4>
+					<p class="entre-semana">Lunes a Viernes<br>8:00 AM – 9:00 PM</p>
+					<p class="fin-semana">Sábados y Domingos<br>11:00 AM – 4:00 PM</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="mapa">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1369338.6724089475!2d14.705460064521164!3d47.907563485561575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d078fa2c0a40d%3A0x4ba989b79b40421a!2sCaf%C3%A9%20Kafka!5e0!3m2!1ses-419!2sdo!4v1703720222557!5m2!1ses-419!2sdo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</section>
+	</section>
+
+	<footer>
+		<div class="contenedor">
+			<div class="footer-inner">
+				<p class="copyright">© 2024 Café Encanto · Richeyla</p>
+				<div class="social-links">
+					<a href="#" aria-label="Instagram">&#128247;</a>
+					<a href="#" aria-label="Facebook">&#128172;</a>
+					<a href="#" aria-label="WhatsApp">&#128241;</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="scroll-to-top" id="scroll-to-top">
+		<span>&#8593;</span>
+	</div>
+
+	<script src="./js/jquery-3.7.1.min.js"></script>
+	<script src="./js/efectos.js"></script>
+	<script src="./js/parallax.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donnique & Tironn – Genacy Wedding Films</title>
+  <link rel="icon" type="image/png" href="media/logo-genacy.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS Global + Estilos específicos -->
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="CSS/films.css" />
+  <link rel="stylesheet" href="CSS/responsive.css" />
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="nav-inner">
+    <!-- LOGO / BRAND -->
+    <a href="index.html" class="logo-wrapper">
+      <img src="media/logo-genacy.png" alt="Genacy Productions Logo" class="logo-img" />
+      <span class="logo-text">Genacy Productions</span>
+    </a>
+
+    <!-- BOTÓN HAMBURGUESA (solo se verá en móvil) -->
+    <button class="nav-toggle" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- NAV DESKTOP -->
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+      <a href="wedding-films.html" class="nav-link" data-i18n="nav.weddingFilms">Wedding Films</a>
+      <a href="pricing.html" class="nav-link" data-i18n="nav.pricing">Pricing</a>
+      <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+      <a href="contact.html" class="nav-link nav-cta" data-i18n="nav.contact">Contact</a>
+    </nav>
+  </div>
+
+  <!-- MENÚ MÓVIL LATERAL -->
+  <nav class="mobile-menu">
+    <a href="index.html" data-i18n="nav.home">Home</a>
+    <a href="wedding-films.html">Wedding Films</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+
+
+<!-- ================= MAIN ================= -->
+<main class="film-detail-main">
+
+  <section class="film-detail-video-section">
+    <div class="film-detail-video-frame">
+      <video
+        class="film-detail-video"
+        controls
+        preload="metadata"
+        poster="media/thumb-donnnique-tito.jpg"
+      >
+        <source src="media/donnique-tironn.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div class="film-detail-meta">
+      <h1 class="film-detail-name">Donnique &amp; Tironn</h1>
+
+      <a href="wedding-films.html" class="pill-button back-button">
+        ← Back to Wedding Films
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <div class="footer-brand">
+      <span>Genacy Productions</span>
+    </div>
+
+    <div class="footer-social">
+      <a href="https://www.instagram.com/genacy/?hl=es" target="_blank" class="pill-button">Instagram</a>
+    </div>
+
+    <div class="footer-contact">
+      <a href="contact.html" class="primary-button small">Contact</a>
+    </div>
+
+  </div>
+</footer>
+
+<script src="JS/language.js" defer></script>
+<script src="JS/main.js" defer></script>
+</body>
+</html>

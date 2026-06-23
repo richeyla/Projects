@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richeyla Fernandez · Freelancer</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="header">
+    <div class="header-inner contenedor">
+      <div class="logo">
+        <span class="logo-iniciales">RF</span>
+        <div>
+          <p class="logo-nombre">Richeyla Fernandez</p>
+          <p class="logo-tag">Freelancer</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#contacto" class="nav-cta">Contratame</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="hero-contenido contenedor">
+      <p class="hero-eyebrow">Disponible para proyectos</p>
+      <h1 class="hero-titulo">Diseño & Desarrollo<br><span>Web Freelancer</span></h1>
+      <div class="hero-ubicacion">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="11" r="3"/><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z"/>
+        </svg>
+        <p>Santo Domingo, República Dominicana</p>
+      </div>
+      <div class="hero-acciones">
+        <a class="boton boton-primario" href="#contacto">Contactar</a>
+        <a class="boton boton-outline" href="#servicios">Ver servicios</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-bar">
+    <div class="contenedor stats-grid">
+      <div class="stat">
+        <strong>+20</strong>
+        <span>Proyectos completados</span>
+      </div>
+      <div class="stat">
+        <strong>+15</strong>
+        <span>Clientes satisfechos</span>
+      </div>
+      <div class="stat">
+        <strong>3+</strong>
+        <span>Años de experiencia</span>
+      </div>
+      <div class="stat">
+        <strong>100%</strong>
+        <span>Dedicación</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <main class="main-contenido" id="servicios">
+    <div class="contenedor">
+      <div class="seccion-header">
+        <p class="seccion-eyebrow">Lo que ofrezco</p>
+        <h2>Mis Servicios</h2>
+        <p class="seccion-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula libero vitae metus faucibus.</p>
+      </div>
+
+      <div class="servicios">
+        <article class="servicio">
+          <div class="servicio-icono">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 21a9 9 0 1 1 0-18a9 8 0 0 1 9 8a4.5 4 0 0 1-4.5 4h-2.5a2 2 0 0 0-1 3.75a1.3 1.3 0 0 1-1 2.25"/>
+              <circle cx="7.5" cy="10.5" r=".5" fill="currentColor"/>
+              <circle cx="12" cy="7.5" r=".5" fill="currentColor"/>
+              <circle cx="16.5" cy="10.5" r=".5" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Diseño Web</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus.</p>
+          <ul class="servicio-lista">
+            <li>UI / UX Design</li>
+            <li>Responsive Design</li>
+            <li>Prototipado</li>
+          </ul>
+        </article>
+
+        <article class="servicio servicio-destacado">
+          <div class="servicio-badge">Popular</div>
+          <div class="servicio-icono">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2"/>
+              <path d="M8 21h8m-4-4v4"/>
+            </svg>
+          </div>
+          <h3>Aplicaciones Web</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus.</p>
+          <ul class="servicio-lista">
+            <li>Apps Full Stack</li>
+            <li>APIs REST</li>
+            <li>Bases de datos</li>
+          </ul>
+        </article>
+
+        <article class="servicio">
+          <div class="servicio-icono">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="5" width="18" height="14" rx="3"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+              <line x1="7" y1="15" x2="7.01" y2="15"/>
+              <line x1="11" y1="15" x2="13" y2="15"/>
+            </svg>
+          </div>
+          <h3>E-Commerce</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus.</p>
+          <ul class="servicio-lista">
+            <li>Tiendas online</li>
+            <li>Pasarelas de pago</li>
+            <li>Gestión de productos</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <!-- CONTACTO -->
+  <section class="seccion-contacto" id="contacto">
+    <div class="contenedor contacto-grid">
+      <div class="contacto-info">
+        <p class="seccion-eyebrow">Trabajemos juntos</p>
+        <h2>Contáctame</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula libero vitae metus faucibus eleifend.</p>
+        <div class="contacto-detalles">
+          <div class="detalle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <span>hola@ejemplo.com</span>
+          </div>
+          <div class="detalle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.29 6.29l1.3-1.3a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span>+1 (809) 000-0000</span>
+          </div>
+          <div class="detalle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="11" r="3"/><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z"/>
+            </svg>
+            <span>Santo Domingo, R.D.</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="formulario">
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input class="input-text" id="nombre" type="text" placeholder="Tu nombre completo">
+        </div>
+        <div class="campo">
+          <label for="tel">Teléfono</label>
+          <input class="input-text" id="tel" type="tel" placeholder="+1 (809) 000-0000">
+        </div>
+        <div class="campo campo-full">
+          <label for="correo">Correo</label>
+          <input class="input-text" id="correo" type="email" placeholder="tu@correo.com">
+        </div>
+        <div class="campo campo-full">
+          <label for="mensaje">Mensaje</label>
+          <textarea class="input-text" id="mensaje" placeholder="Cuéntame sobre tu proyecto..."></textarea>
+        </div>
+        <div class="campo campo-full">
+          <button class="boton boton-primario boton-full" type="submit">Enviar mensaje</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="contenedor footer-inner">
+      <p class="footer-brand">Richeyla Fernandez · Freelancer</p>
+      <p class="footer-copy">© 2025 Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('navMobile');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('activo');
+      toggle.classList.toggle('activo');
+    });
+    document.querySelectorAll('.nav-mobile a').forEach(a => {
+      a.addEventListener('click', () => {
+        nav.classList.remove('activo');
+        toggle.classList.remove('activo');
+      });
+    });
+  </script>
+
+</body>
+</html>

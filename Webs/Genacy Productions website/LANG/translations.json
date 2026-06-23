@@ -1,0 +1,251 @@
+{
+  "en": {
+    "nav.weddingFilms": "Wedding Films",
+    "nav.pricing": "Pricing",
+    "nav.about": "About",
+    "nav.contact": "Contact",
+
+    "pricing.title": "Wedding Videography Collections",
+    "pricing.subtitle": "Thoughtfully designed collections to capture your day with intention, emotion and timeless elegance.",
+    "about.hero.title": "We Tell Love Stories<br>Through Film",
+    "about.hero.subtitle": "Capturing weddings with authenticity, elegance and emotion — so you can relive your day forever.",
+
+    "about.philosophy.title": "Our Philosophy",
+    "about.philosophy.p1": "At Genacy Wedding Films, we believe your wedding film should feel like a timeless memory — emotional, cinematic and intentional.",
+    "about.philosophy.p2": "Our approach is simple: we document your day as it unfolds naturally, focusing on genuine moments, soft movement, warm light and the beauty of real connection.",
+
+    "about.style.title": "Our Style",
+    "about.style.p1": "Inspired by modern wedding videography and natural storytelling, our films blend elegant visuals with meaningful audio and music.",
+    "about.style.p2": "The result is a wedding film that feels personal, emotional and beautiful to watch — today, tomorrow, and years from now.",
+
+    "about.profile.title": "Meet the Videographer",
+    "about.profile.p1": "Behind Genacy is a passionate wedding videographer committed to capturing moments that will become part of your legacy.",
+    "about.profile.p2": "With a calm, documentary-style approach and an eye for detail, every film is crafted to feel natural, emotional and truly yours.",
+
+    "about.cta.title": "Ready to create something timeless with your wedding videographer?",
+    "about.cta.button": "Book Your Wedding",
+
+    "contact.title": "Let’s Create Something Beautiful Together",
+    "contact.subtitle": "Fill out the form below and we’ll get back to you with availability, details and next steps.",
+    "contact.name.label": "Full Name",
+    "contact.email.label": "Email Address",
+    "contact.phone.label": "Phone Number",
+    "contact.date.label": "Wedding Date",
+    "contact.location.label": "Wedding Location",
+    "contact.budget.label": "Estimated Budget",
+
+    "contact.services.label": "What services are you interested in?",
+    "contact.message.label": "Tell us about your wedding",
+    "contact.button": "Send Message",
+
+    "footer.brand": "Genacy Productions",
+    "footer.instagram": "Instagram",
+    "footer.contact": "Contact",
+
+    "home.section1.brand": "Genacy Wedding Films",
+    "home.section1.watch": "Watch film",
+
+    "home.hero.brand": "Genacy Wedding Films",
+    "home.hero.ctaTitle": "Let’s work together to make memories you can relive forever.",
+    "home.hero.button": "Book your wedding",
+
+    "home.section2.brand": "Genacy Wedding Films",
+    "home.section2.watch": "Watch film",
+
+    "pricing.brand": "Genacy Wedding Films",
+    "pricing.includes": "Includes",
+
+    "pricing.p1.title": "The Genacy Essential",
+    "pricing.p1.tagline": "Perfect for intimate weddings or couples who want core moments beautifully captured.",
+    "pricing.p1.item1": "4 hours of continuous coverage.",
+    "pricing.p1.item2": "1 professional videographer.",
+    "pricing.p1.item3": "Cinematic highlight film (2–3 minutes).",
+    "pricing.p1.item4": "Professional color grading.",
+    "pricing.p1.item5": "High-quality audio capture.",
+    "pricing.p1.item6": "Online delivery for easy sharing & downloading.",
+    "pricing.p1.price": "Starting at $800.",
+    "pricing.p1.button": "Inquire About This Collection",
+
+    "pricing.p2.title": "The Genacy Signature",
+    "pricing.p2.tagline": "Our most popular package — a full–day storytelling experience with elevated visuals.",
+    "pricing.p2.item1": "8 hours of wedding day coverage.",
+    "pricing.p2.item2": "1 videographers.",
+    "pricing.p2.item3": "Highlight film (3–5 minutes).",
+    "pricing.p2.item4": "Drone footage (venue permitting).",
+    "pricing.p2.item5": "Clean, cinematic color grading.",
+    "pricing.p2.item6": "Personalized music selection.",
+    "pricing.p2.item7": "Online delivery.",
+    "pricing.p2.price": "Starting at $1,500.",
+    "pricing.p2.button": "Inquire About This Collection",
+
+    "pricing.p3.title": "The Genacy Cinematic",
+    "pricing.p3.tagline": "Designed for couples who want their wedding to feel like a movie.",
+    "pricing.p3.item1": "Full–day coverage.",
+    "pricing.p3.item2": "2 videographers for full cinematic angles.",
+    "pricing.p3.item3": "Cinematic highlight film (5–10 minutes).",
+    "pricing.p3.item4": "Full ceremony edit.",
+    "pricing.p3.item5": "Full speeches & first dances edit.",
+    "pricing.p3.item6": "Behind–the–scenes candid moments.",
+    "pricing.p3.item7": "Drone footage (venue permitting).",
+    "pricing.p3.item8": "Premium color grading + sound design.",
+    "pricing.p3.item9": "Online delivery.",
+    "pricing.p3.price": "Starting at $2,000.",
+    "pricing.p3.button": "Inquire About This Collection",
+
+    "pricing.p4.title": "The Genacy Luxe Experience",
+    "pricing.p4.tagline": "A luxury–level wedding film masterpiece with complete cinematic coverage.",
+    "pricing.p4.item1": "Full–day coverage (up to 12 hours).",
+    "pricing.p4.item2": "2–3 professional videographers.",
+    "pricing.p4.item3": "Premium cinematic highlight film (8–12 minutes).",
+    "pricing.p4.item4": "Documentary–style full film (30–60 minutes).",
+    "pricing.p4.item5": "Full ceremony & reception edits.",
+    "pricing.p4.item6": "Drone cinematography.",
+    "pricing.p4.item7": "Personalized storytelling interview (optional add–on).",
+    "pricing.p4.item8": "Raw footage included.",
+    "pricing.p4.item9": "Same–week teaser for social media.",
+    "pricing.p4.item10": "Premium color, sound design & narrative–driven editing.",
+    "pricing.p4.item11": "Online delivery.",
+    "pricing.p4.price": "Starting at $4,000.",
+    "pricing.p4.button": "Inquire About This Collection",
+
+    "pricing.note": "Custom collections are available for destination weddings, elopements and multi-day celebrations. Share your vision and we’ll create something tailored to you.",
+    "pricing.noteButton": "Contact Your Wedding Videographer",
+
+    "films.brand": "Genacy Wedding Films",
+    "films.title": "Wedding Films",
+    "films.subtitle": "A selection of wedding films capturing real stories, genuine emotion and timeless moments.",
+    "pricing.express": "Express delivery (optional) available for an extra cost.",
+    "contact.express": "Express delivery (optional, additional fee)",
+
+    "pricing.additionalTitle": "Additional Information",
+    "pricing.destinationNote": "I am available for destination weddings across the globe. <strong>Travel and accommodation fees will be added to your package.</strong>",
+    "pricing.expressNote": "Express Delivery (3–5 days) — <strong>$150 add-on</strong>"
+
+
+  },
+
+  "es": {
+    "nav.weddingFilms": "Videos de Boda",
+    "nav.pricing": "Precios",
+    "nav.about": "Sobre mí",
+    "nav.contact": "Contacto",
+
+    "pricing.title": "Colecciones de Videografía de Bodas",
+    "pricing.subtitle": "Colecciones diseñadas cuidadosamente para capturar tu día con intención, emoción y elegancia atemporal.",
+    "about.hero.title": "Contamos historias de amor<br>a través del cine",
+    "about.hero.subtitle": "Capturamos bodas con autenticidad, elegancia y emoción para que puedas revivir tu día para siempre.",
+
+    "about.philosophy.title": "Nuestra filosofía",
+    "about.philosophy.p1": "En Genacy Wedding Films creemos que tu video de boda debe sentirse como un recuerdo atemporal: emocional, cinematográfico e intencional.",
+    "about.philosophy.p2": "Nuestra forma de trabajar es sencilla: documentamos tu día tal como sucede, enfocándonos en momentos genuinos, movimiento suave, luz cálida y la belleza de la conexión real.",
+
+    "about.style.title": "Nuestro estilo",
+    "about.style.p1": "Inspirados en la videografía de bodas moderna y la narración natural, nuestros filmes combinan imágenes elegantes con audio y música significativos.",
+    "about.style.p2": "El resultado es una video de boda que se siente personal, emotiva y hermosa de ver — hoy, mañana y dentro de muchos años.",
+
+    "about.profile.title": "Conoce al videógrafo",
+    "about.profile.p1": "Detrás de Genacy hay un videógrafo de bodas apasionado, comprometido con capturar momentos que formarán parte de tu legado.",
+    "about.profile.p2": "Con un enfoque calmado, tipo documental, y un gran ojo para los detalles, cada video se crea para sentirse natural, emotiva y verdaderamente tuya.",
+
+    "about.cta.title": "¿Listos para crear algo atemporal con tu videógrafo de bodas?",
+    "about.cta.button": "Reserva tu boda",
+    "contact.title": "Creemos algo hermoso juntos",
+    "contact.subtitle": "Completa el formulario y te contactaremos con disponibilidad, detalles y próximos pasos.",
+
+    "contact.name.label": "Nombre completo",
+    "contact.email.label": "Correo electrónico",
+    "contact.phone.label": "Número de teléfono",
+    "contact.date.label": "Fecha de la boda",
+    "contact.location.label": "Lugar de la boda",
+    "contact.budget.label": "Presupuesto estimado",
+
+    "contact.services.label": "¿En qué servicios estás interesado/a?",
+    "contact.message.label": "Cuéntanos sobre tu boda",
+    "contact.button": "Enviar mensaje",
+
+    "footer.brand": "Genacy Productions",
+    "footer.instagram": "Instagram",
+    "footer.contact": "Contacto",
+
+    "home.section1.brand": "Genacy Wedding Films",
+    "home.section1.watch": "Ver video",
+
+    "home.hero.brand": "Genacy Wedding Films",
+    "home.hero.ctaTitle": "Trabajemos juntos para crear recuerdos que puedas revivir para siempre.",
+    "home.hero.button": "Reserva tu boda",
+
+    "home.section2.brand": "Genacy Wedding Films",
+    "home.section2.watch": "Ver video",
+
+    "pricing.brand": "Genacy Wedding Films",
+    "pricing.includes": "Incluye",
+
+    "pricing.p1.title": "The Genacy Essential",
+    "pricing.p1.tagline": "Perfecto para bodas íntimas o parejas que quieren que sus momentos clave queden bellamente capturados.",
+    "pricing.p1.item1": "4 horas de cobertura continua.",
+    "pricing.p1.item2": "1 videógrafo profesional.",
+    "pricing.p1.item3": "Highlight cinematográfico (2–3 minutos).",
+    "pricing.p1.item4": "Corrección de color profesional.",
+    "pricing.p1.item5": "Captura de audio en alta calidad.",
+    "pricing.p1.item6": "Entrega online lista para compartir y descargar.",
+    "pricing.p1.price": "Desde $800.",
+    "pricing.p1.button": "Solicitar este paquete",
+
+    "pricing.p2.title": "The Genacy Signature",
+    "pricing.p2.tagline": "Nuestro paquete más solicitado: una experiencia de storytelling de día completo con visuales cinematográficos.",
+    "pricing.p2.item1": "8 horas de cobertura el día de la boda.",
+    "pricing.p2.item2": "1 videógrafos.",
+    "pricing.p2.item3": "Highlight (3–5 minutos).",
+    "pricing.p2.item4": "Tomas con dron (si el lugar lo permite).",
+    "pricing.p2.item5": "Corrección de color limpia y cinematográfica.",
+    "pricing.p2.item6": "Selección musical personalizada.",
+    "pricing.p2.item7": "Entrega online.",
+    "pricing.p2.price": "Desde $1,500.",
+    "pricing.p2.button": "Solicitar este paquete",
+
+    "pricing.p3.title": "The Genacy Cinematic",
+    "pricing.p3.tagline": "Pensado para parejas que quieren que su boda se sienta como una video.",
+    "pricing.p3.item1": "Cobertura de día completo.",
+    "pricing.p3.item2": "2 videógrafos para ángulos totalmente cinematográficos.",
+    "pricing.p3.item3": "Highlight cinematográfico (5–10 minutos).",
+    "pricing.p3.item4": "Edición completa de la ceremonia.",
+    "pricing.p3.item5": "Edición completa de discursos y primeros bailes.",
+    "pricing.p3.item6": "Momentos espontáneos detrás de cámara.",
+    "pricing.p3.item7": "Tomas con dron (si el lugar lo permite).",
+    "pricing.p3.item8": "Colorización premium y diseño de sonido.",
+    "pricing.p3.item9": "Entrega online.",
+    "pricing.p3.price": "Desde $2,000.",
+    "pricing.p3.button": "Solicitar este paquete",
+
+    "pricing.p4.title": "The Genacy Luxe Experience",
+    "pricing.p4.tagline": "Un paquete de nivel lujo para crear una verdadera obra maestra de tu boda.",
+    "pricing.p4.item1": "Cobertura de día completo (hasta 12 horas).",
+    "pricing.p4.item2": "2–3 videógrafos profesionales.",
+    "pricing.p4.item3": "Highlight cinematográfico premium (8–12 minutos).",
+    "pricing.p4.item4": "Video completa en estilo documental (30–60 minutos).",
+    "pricing.p4.item5": "Edición completa de ceremonia y recepción.",
+    "pricing.p4.item6": "Cinematografía con dron.",
+    "pricing.p4.item7": "Entrevista de storytelling personalizada (opcional).",
+    "pricing.p4.item8": "Material en bruto incluido.",
+    "pricing.p4.item9": "Teaser para redes sociales dentro de la misma semana.",
+    "pricing.p4.item10": "Color, sonido y narrativa en nivel premium.",
+    "pricing.p4.item11": "Entrega online.",
+    "pricing.p4.price": "Desde $4,000.",
+    "pricing.p4.button": "Solicitar este paquete",
+
+    "pricing.note": "También ofrecemos colecciones personalizadas para bodas de destino, elopements y celebraciones de varios días. Comparte tu visión y crearemos algo a tu medida.",
+    "pricing.noteButton": "Contacta a tu videógrafo de bodas",
+
+    "films.brand": "Genacy Wedding Films",
+    "films.title": "Videos de boda",
+    "films.subtitle": "Una selección de videos de boda que capturan historias reales, emociones genuinas y momentos atemporales.",
+    "pricing.express": "Entrega exprés (opcional) disponible por un costo adicional.",
+    "contact.express": "Entrega exprés (opcional, con costo adicional)",
+
+    "pricing.additionalTitle": "Información Adicional",
+    "pricing.destinationNote": "Estoy disponible para bodas de destino en cualquier parte del mundo. <strong>Los costos de viaje y alojamiento se agregarán a tu paquete.</strong>",
+    "pricing.expressNote": "Entrega Exprés (3–5 días) — <strong>$150 adicional</strong>"
+
+  }
+}
+

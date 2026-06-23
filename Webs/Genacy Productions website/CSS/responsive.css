@@ -1,0 +1,302 @@
+/* =====================================================
+   HEADER RESPONSIVE
+   ===================================================== */
+
+/* Hasta 900px: HEADER ADAPTADO A MÓVIL / TABLET */
+@media (max-width: 900px) {
+
+  /* Contenedor del header */
+  .nav-inner {
+    padding-block: 0.8rem;
+    justify-content: center;   /* centra logo */
+    position: relative;        /* para posicionar burger + idioma */
+  }
+
+  /* Ocultamos el menú de escritorio */
+  .main-nav {
+    display: none;
+  }
+
+  /* Burger menu visible y fijo a la izquierda */
+  .nav-toggle {
+    display: flex;
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  /* Logo más compacto y centrado */
+  .logo-wrapper {
+    margin: 0 auto;
+    gap: 0.35rem;
+  }
+
+  .logo-img {
+    height: 42px;
+  }
+
+  .logo-text {
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+  }
+
+  /* Botón de idioma en móvil / tablet */
+  #lang-toggle {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem 0.9rem;
+    font-size: 0.7rem;
+  }
+}
+
+/* Móviles pequeños: mostrar SOLO EL NOMBRE, sin logo */
+@media (max-width: 480px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  /* Quitamos el ícono */
+  .logo-img {
+    display: none;
+  }
+
+  /* Dejamos solo el texto y lo hacemos más pequeño */
+  .logo-text {
+    display: block;
+    font-size: 0.78rem;
+    letter-spacing: 0.18em;
+    font-weight: 500;
+  }
+
+  /* Reposicionamos el menú hamburguesa */
+  .nav-toggle {
+    left: 0.75rem;
+  }
+
+  /* Botón de idioma más compacto */
+  #lang-toggle {
+    right: 0.75rem;
+    padding: 0.22rem 0.8rem;
+    font-size: 0.68rem;
+  }
+
+  /* Ajuste al wrapper */
+  .logo-wrapper {
+    gap: 0;          /* ya no hay logo, no necesitamos espacio */
+    margin: 0 auto;  /* centrado */
+  }
+}
+
+/* Desktop: ocultar completamente el menú móvil */
+@media (min-width: 901px) {
+  .mobile-menu {
+    display: none !important;
+    transform: translateX(-100%) !important;
+    box-shadow: none !important;
+  }
+}
+
+/* =====================================================
+   FOOTER RESPONSIVE (MÓVIL)
+   ===================================================== */
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .footer-brand span {
+    font-size: 1.1rem;
+    line-height: 1.2;
+  }
+
+  .footer-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .footer-social .pill-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1.8rem;
+    border-radius: 999px;
+    white-space: nowrap;
+    width: auto;
+    min-width: 130px;
+  }
+
+  .footer-contact {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .footer-contact .primary-button {
+    border-radius: 999px;
+    padding: 0.6rem 2.2rem;
+  }
+}
+
+/* Hasta ~700px: menos padding lateral general */
+@media (max-width: 700px) {
+  main,
+  .site-header,
+  .site-footer {
+    padding-inline: 1.25rem;
+  }
+}
+
+/* =====================================
+   EXPRESS BANNER – ICON + TEXT INLINE
+===================================== */
+
+/* Tablets y móviles grandes */
+@media (max-width: 900px) {
+  .express-banner {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    padding: 0.7rem 1.2rem;
+    white-space: nowrap;      /* Evita saltos de línea entre icono y texto */
+  }
+
+  .express-icon {
+    font-size: 1.1rem;
+  }
+
+  .express-text {
+    font-size: 0.95rem;
+  }
+}
+
+/* Móviles */
+@media (max-width: 600px) {
+  .express-banner {
+    padding: 0.6rem 0.9rem;
+    gap: 0.35rem;
+    max-width: 95%;
+  }
+
+  .express-icon {
+    font-size: 1rem;
+  }
+
+  .express-text {
+    font-size: 0.88rem;
+  }
+}
+
+/* Móviles muy pequeños */
+@media (max-width: 420px) {
+  .express-banner {
+    padding: 0.5rem 0.75rem;
+    max-width: 100%;
+  }
+
+  .express-icon {
+    font-size: 0.9rem;
+  }
+
+  .express-text {
+    font-size: 0.82rem;
+  }
+}
+
+/* ABOUT PAGE – NAME RESPONSIVE */
+@media (max-width: 768px) {
+  .videographer-name {
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .videographer-name {
+    font-size: 1.9rem;
+  }
+}
+
+/* =============================
+   PRICING – DESTINATION NOTE
+============================= */
+@media (max-width: 900px) {
+  .destination-note {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+    margin: 0.75rem auto 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .destination-note {
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+    text-align: center;
+  }
+}
+
+/* ===========================
+   ADDITIONAL INFO RESPONSIVE
+=========================== */
+@media (max-width: 900px) {
+  .additional-info-banner {
+    padding: 1.8rem 1.4rem;
+    margin: 2.5rem auto;
+  }
+
+  .additional-title {
+    font-size: 1.65rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .additional-item {
+    gap: 0.65rem;
+  }
+
+  .add-text {
+    font-size: 0.95rem;
+  }
+
+  .add-icon {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .additional-info-banner {
+    padding: 1.6rem 1rem;
+    margin: 2rem auto;
+  }
+
+  .additional-title {
+    font-size: 1.45rem;
+  }
+
+  .additional-item {
+    gap: 0.55rem;
+  }
+
+  .add-text {
+    font-size: 0.9rem;
+  }
+}

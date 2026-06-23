@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You – Genacy Wedding Films</title>
+  <link rel="icon" type="image/png" href="media/logo-genacy.png" />
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS global del sitio -->
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="CSS/contact.css" />
+  <link rel="stylesheet" href="CSS/responsive.css" />
+  <!-- CSS específico de la página de gracias -->
+  <link rel="stylesheet" href="CSS/thank-you.css" />
+</head>
+
+<body>
+  <!-- ============= HEADER (igual que en contact.html) ============= -->
+  <header class="site-header">
+    <div class="nav-inner">
+      <!-- LOGO / BRAND -->
+      <a href="index.html" class="logo-wrapper">
+        <img src="media/logo-genacy.png" alt="Genacy Productions Logo" class="logo-img" />
+        <span class="logo-text">Genacy Productions</span>
+      </a>
+
+      <!-- BOTÓN HAMBURGUESA -->
+      <button class="nav-toggle" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- NAV DESKTOP -->
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+        <a href="wedding-films.html" class="nav-link" data-i18n="nav.weddingFilms">Wedding Films</a>
+        <a href="pricing.html" class="nav-link" data-i18n="nav.pricing">Pricing</a>
+        <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+        <a href="contact.html" class="nav-link nav-cta" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <!-- BOTÓN IDIOMA -->
+      <button id="lang-toggle" class="pill-button pill-lang" type="button">
+        EN
+      </button>
+    </div>
+
+    <!-- MENÚ MÓVIL LATERAL -->
+    <nav class="mobile-menu">
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="wedding-films.html" data-i18n="nav.weddingFilms">Wedding Films</a>
+      <a href="pricing.html" data-i18n="nav.pricing">Pricing</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ============= CONTENIDO PRINCIPAL ============= -->
+  <main class="thank-main">
+    <section class="thank-card">
+      <h1 class="thank-title">Thank you!</h1>
+      <p class="thank-text">
+        We’ve received your message and truly appreciate your interest in Genacy Wedding Films.
+        We’ll review your details and get back to you shortly with availability and next steps.
+      </p>
+
+      <a href="index.html" class="primary-button thank-link">
+        Back to Home
+      </a>
+    </section>
+  </main>
+
+  <!-- ============= FOOTER (igual estilo) ============= -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span data-i18n="footer.brand">Genacy Productions</span>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://www.instagram.com/genacy/?hl=es" target="_blank" class="pill-button" data-i18n="footer.instagram">
+          Instagram
+        </a>
+      </div>
+
+      <div class="footer-contact">
+        <a href="contact.html" class="primary-button small" data-i18n="footer.contact">
+          Contact
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT (para burger + idioma) -->
+  <script src="JS/language.js" defer></script>
+  <script src="JS/main.js" defer></script>
+</body>
+</html>

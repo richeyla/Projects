@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Amy Lauren — get in touch to join Zumba classes or for bookings.">
+    <title>Contact | Amy Lauren</title>
+    <link rel="icon" type="image/x-icon" href="media/logo.jpg">
+    <link rel="stylesheet" href="CSS/contactos.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+        <a href="index.html" class="nav-logo">
+            <img src="media/logo2.jpg" alt="Amy Lauren Logo">
+        </a>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+        <button class="nav-hamburger" id="menuBtn" aria-label="Open menu">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- CONTACT CONTENT -->
+    <main class="contact-main">
+        <div class="contact-header">
+            <span class="section-tag">Let's Connect</span>
+            <h1>GET IN<br><span class="accent">TOUCH</span></h1>
+            <p>Ready to SLAY? Send a message and let's make it happen!</p>
+        </div>
+
+        <div class="contact-box">
+            <div class="contact-image"></div>
+            <div class="contact-form-wrap">
+                <form action="https://formsubmit.co/slayinwithamy@gmail.com" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" class="field" required placeholder=" ">
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" class="field" required placeholder=" ">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" required class="field" placeholder=" "></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Message <span>→</span></button>
+                    <input type="hidden" name="_next" value="https://amylauren.netlify.app/">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-name">Amy Lauren</div>
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/slayinwithamy/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@slayinwithamy" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="contact.html" aria-label="Contact"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+        </div>
+        <p class="footer-credit">website by <a href="https://portafolioricheyla.netlify.app/" target="_blank">Richeyla</a></p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/1d7a8a0847.js" crossorigin="anonymous"></script>
+    <script>
+        const navbar = document.getElementById('navbar');
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 60);
+        }, { passive: true });
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

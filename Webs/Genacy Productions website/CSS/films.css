@@ -1,0 +1,144 @@
+/* =====================================================
+   WEDDING FILMS PAGE
+   ===================================================== */
+
+.films-main {
+  padding-top: 3rem;
+}
+
+/* ---------- HERO ---------- */
+
+.films-hero {
+  text-align: center;
+  padding: 4rem 1.5rem 2.5rem;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.films-title {
+  font-family: var(--font-serif);
+  font-size: 2.7rem;
+  color: var(--text-main);
+  margin-bottom: 1.2rem;
+}
+
+.films-subtitle {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--text-muted);
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ---------- GRID DE TARJETAS ---------- */
+
+.films-grid {
+  max-width: 1200px;
+  margin: 0 auto 5rem;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.5rem;
+}
+
+.film-card {
+  background-color: var(--bg-card);
+  border-radius: 24px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.film-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 22px 55px rgba(0,0,0,0.08);
+}
+
+/* ---------- Imagen ---------- */
+
+.film-thumbnail {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.film-thumbnail img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease, filter 0.6s ease;
+}
+
+.film-card:hover .film-thumbnail img {
+  transform: scale(1.04);
+  filter: brightness(1.05);
+}
+
+/* ---------- Texto ---------- */
+
+.film-info {
+  padding: 1.3rem 1.5rem 1.6rem;
+  text-align: center;
+}
+
+.film-name {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  margin: 0 0 0.25rem;
+  letter-spacing: 0.02em;
+}
+
+.film-location {
+  font-family: var(--font-sans);
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* ---------- BACK BUTTON ---------- */
+
+.back-button {
+  margin-top: 20px;
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background: #f2f2f2;
+  color: #444;
+  transition: 0.3s ease;
+  border: 1px solid #ddd;
+}
+
+.back-button:hover {
+  background: #e6e6e6;
+  color: #000;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 900px) {
+  .films-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .films-title {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .films-title {
+    font-size: 2rem;
+  }
+
+  .film-name {
+    font-size: 1.25rem;
+  }
+}

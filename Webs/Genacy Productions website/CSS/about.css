@@ -1,0 +1,167 @@
+/* =====================================================
+   ABOUT PAGE STYLES
+   ===================================================== */
+
+/* ---------- Hero del About ---------- */
+.about-main {
+  padding-top: 3rem;
+}
+
+.about-hero {
+  text-align: center;
+  padding: 4rem 1.5rem 3rem;
+}
+
+.about-title {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  line-height: 1.25;
+  color: var(--text-main);
+  max-width: 650px;
+  margin: 0 auto 1.2rem;
+}
+
+.about-subtitle {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  max-width: 650px;
+  margin: 0 auto;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+/* ---------- Sección de texto ---------- */
+.about-content {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+  display: grid;
+  gap: 3rem;
+}
+
+.about-text-block h2 {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+  color: var(--text-main);
+}
+
+.about-text-block p {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--text-main);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+/* ---------- Perfil del videógrafo (NUEVO) ---------- */
+
+.about-profile {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.about-profile-text {
+  flex: 2;
+}
+
+.about-profile-photo {
+  flex: 1;
+  text-align: right;
+}
+
+.about-profile-photo img {
+  width: 100%;
+  max-width: 260px;
+  border-radius: 999px;     /* foto redonda/oval */
+  object-fit: cover;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* ---------- CTA final ---------- */
+.about-cta {
+  text-align: center;
+  padding: 4rem 1.5rem 5rem;
+}
+
+.about-cta h2 {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  max-width: 650px;
+  margin: 0 auto 2rem;
+  line-height: 1.3;
+  color: var(--text-main);
+}
+
+.about-cta .primary-button {
+  margin-top: 1rem;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+
+  .about-title {
+    font-size: 2.2rem;
+  }
+
+  .about-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .about-text-block h2 {
+    font-size: 1.6rem;
+  }
+
+  /* PERFIL EN MOBILE */
+  .about-profile {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .about-profile-photo {
+    text-align: center;
+  }
+
+  .about-profile-text {
+    text-align: center;
+  }
+
+  .about-cta h2 {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-title {
+    font-size: 1.9rem;
+  }
+
+  .about-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .about-content {
+    gap: 2.2rem;
+  }
+
+  .about-text-block h2 {
+    font-size: 1.45rem;
+  }
+
+  .about-cta h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* NAME STYLE – About Page */
+
+.videographer-name {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.8rem;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  margin: 0.75rem 0 1.5rem;
+  color: #d5b98a;         /* dorado suave elegante */
+  text-transform: none;     /* mantiene mayúsculas/minúsculas naturales */
+}

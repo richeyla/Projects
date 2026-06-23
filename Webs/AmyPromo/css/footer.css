@@ -1,0 +1,148 @@
+/* ==========================
+   FOOTER (UNIFICADO)
+   - Home: connect-wrap + connect-right + connect-bottom
+   - About/Gallery: solo connect-bottom
+   ========================== */
+
+.connect-footer{
+  margin-top: 80px;
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+}
+
+/* ====== FOOTER GRANDE (HOME) ====== */
+.connect-wrap{
+  width: min(1200px, 92%);
+  margin: 0 auto;
+  padding: 46px 0;
+  display: grid;
+  grid-template-columns: 1fr 2.2fr;
+  gap: 44px;
+  align-items: center;
+}
+
+/* Columna izquierda */
+.connect-left{
+  padding-left: 6px;
+}
+
+/* Work with me (bloque de contacto HOME) */
+.work-with-me{
+  text-align: center;
+  margin-top: 28px;
+}
+
+.work-title{
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.work-text{
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+
+.work-email{
+  font-size: 13px;
+  margin-bottom: 16px;
+  color: var(--text);
+}
+
+/* Instagram icon centrado */
+.work-instagram{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  color: var(--text);
+  opacity: 0.85;
+  transition: color .2s ease, opacity .2s ease, transform .2s ease;
+}
+.work-instagram:hover{
+  color: var(--red);
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+/* Columna derecha (imagen) */
+.connect-right{
+  background: #d9d9d9;
+  border: 1px solid rgba(0,0,0,0.06);
+  overflow: hidden;
+  min-height: 320px;
+}
+
+.connect-right img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* ====== FOOTER MINI (TODAS LAS PÁGINAS) ====== */
+.connect-bottom{
+  width: min(1200px, 92%);
+  margin: 0 auto;
+  padding: 18px 0 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Logo central */
+.connect-logo{
+  display: inline-flex;
+  align-items: center;
+  opacity: 0.95;
+}
+
+.connect-logo img{
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
+/* Botón back to top */
+.back-top{
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(11,11,11,0.18);
+  border-radius: 2px;
+  font-size: 16px;
+  color: var(--text);
+  opacity: 0.75;
+  transition: opacity .2s ease, transform .2s ease, border-color .2s ease, color .2s ease;
+}
+.back-top:hover{
+  opacity: 1;
+  transform: translateY(-2px);
+  border-color: var(--red);
+  color: var(--red);
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .connect-wrap{
+    grid-template-columns: 1fr;
+  }
+  .connect-right{
+    min-height: 260px;
+  }
+}
+
+@media (max-width: 768px){
+  .connect-bottom{
+    justify-content: space-between;
+  }
+}

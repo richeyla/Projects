@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Amy Lauren — certified Zumba instructor, dancer and model.">
+    <title>About | Amy Lauren</title>
+    <link rel="icon" type="image/x-icon" href="media/logo.jpg">
+    <link rel="stylesheet" href="CSS/about.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+        <a href="index.html" class="nav-logo">
+            <img src="media/logo2.jpg" alt="Amy Lauren Logo">
+        </a>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <button class="nav-hamburger" id="menuBtn" aria-label="Open menu">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- ABOUT CONTENT -->
+    <main class="about-main">
+        <div class="about-card">
+            <div class="about-image">
+                <img src="media/fondo.jpg" alt="Amy Lauren">
+            </div>
+            <div class="about-text">
+                <span class="section-tag">About Me</span>
+                <h1>Amy Lauren</h1>
+                <p class="about-roles">
+                    <span>Dancer</span>
+                    <span class="dot">·</span>
+                    <span>Zumba Instructor</span>
+                    <span class="dot">·</span>
+                    <span>Model</span>
+                </p>
+                <p>Amy Lauren is a certified Zumba instructor, dancer, and model known for her infectious energy and genuinely welcoming spirit. Under her motto <em>"SLAY ALL DAY WITH AMY"</em>, she has built a thriving dance-fitness community where students of all levels feel empowered, confident, and at home on the dance floor.</p>
+                <p>Her classes are more than just a workout — they're a celebration of movement, joy, and self-expression. Whether you're stepping on the dance floor for the first time or looking to elevate your fitness journey, Amy's classes are the perfect blend of fun, movement, and confidence.</p>
+                <a href="contact.html" class="btn-primary">Contact Amy</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-name">Amy Lauren</div>
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/slayinwithamy/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@slayinwithamy" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="contact.html" aria-label="Contact"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+        </div>
+        <p class="footer-credit">website by <a href="https://portafolioricheyla.netlify.app/" target="_blank">Richeyla</a></p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/1d7a8a0847.js" crossorigin="anonymous"></script>
+    <script>
+        const navbar = document.getElementById('navbar');
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 60);
+        }, { passive: true });
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

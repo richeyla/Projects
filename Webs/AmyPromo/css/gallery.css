@@ -1,0 +1,374 @@
+.brand-gallery{
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* ✅ Título de página centrado */
+.page-title{
+  text-align: center;
+  font-size: clamp(26px, 3.5vw, 40px);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+  color: var(--text);
+}
+
+/* Opcional: una línea sutil debajo del título */
+.page-title::after{
+  content: "";
+  display: block;
+  width:90px;
+  height: 2px;
+  margin: 14px auto 0;
+  background: var(--border);
+}
+
+.brand-card{
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  background: #000;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+  position: relative;
+  height: 360px;
+  transition: transform .18s ease, border-color .18s ease;
+}
+
+.brand-card:hover{
+  transform: translateY(-2px);
+  border-color: rgba(216,31,38,0.35);
+}
+
+/* cover */
+.brand-card__cover{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  filter: blur(2px) brightness(0.75) contrast(1.05) saturate(1.1);
+  transform: scale(1.04);
+}
+
+/* overlay */
+.brand-card__overlay{
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.40),
+    rgba(0,0,0,0.25),
+    rgba(0,0,0,0.70)
+  );
+}
+
+/* top logo */
+.brand-card__top{
+  position: relative;
+  height: 90px;
+  display: grid;
+  place-items: center;
+  padding: 14px;
+}
+
+.brand-card__logo{
+  height: 34px;
+  width: auto;
+  filter: drop-shadow(0 10px 18px rgba(0,0,0,0.45));
+}
+
+/* bottom meta */
+.brand-card__bottom{
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  color: #fff;
+}
+
+.brand-card__name{
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.brand-card__hint{
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+/* Responsive grid */
+@media (max-width: 1000px){
+  .brand-gallery{ grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 680px){
+  .brand-gallery{ grid-template-columns: 1fr; }
+  .brand-card{ height: 380px; }
+}
+
+/* ==========================
+   LIGHTBOX
+   ========================== */
+
+.lightbox{
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 999;
+}
+.lightbox[aria-hidden="false"]{ display:block; }
+
+.lightbox__backdrop{
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.72);
+}
+
+.lightbox__panel{
+  position: relative;
+  width: min(720px, 92vw);
+  max-height: 88vh;
+  margin: 6vh auto;
+  padding-bottom: 12px;
+
+  background: #0b0b0b;
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 16px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.lightbox__close{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 42px;
+  height: 42px;
+  border: 0;
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.lightbox__header{
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.10);
+  display: grid;
+  place-items: center;
+}
+
+.lightbox__header img{
+  height: 34px;
+  width: auto;
+}
+
+/* Swiper */
+.swiper{
+  width: 100%;
+  height: auto;
+}
+
+.swiper-wrapper{
+  align-items: center;
+}
+
+.swiper-slide{
+  padding: 14px;
+}
+
+.swiper-slide img,
+.swiper-slide video{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.swiper-slide video{
+  max-height: 72vh;
+}
+
+/* Slides tipo Instagram */
+#brandSwiper .swiper-slide{
+  display: grid;
+  place-items: center;
+  padding: 18px 14px 26px;
+}
+
+/* Frame 9:16 */
+.media-frame{
+  width: min(380px, 86vw);
+  aspect-ratio: 9 / 16;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+.media-frame img,
+.media-frame video{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+@media (min-width: 1100px){
+  .media-frame{ width: 480px; }
+}
+
+#brandSwiper{
+  padding-bottom: 34px;
+}
+
+@media (max-width: 600px){
+  .lightbox__panel{
+    width: 94vw;
+    margin: 4vh auto;
+  }
+
+  .media-frame{
+    width: 92vw;
+  }
+
+  .swiper-slide{
+    padding: 10px;
+  }
+}
+
+/* Logos específicos más grandes */
+.brand-card[data-brand="edhardy"]  .brand-card__logo,
+.brand-card[data-brand="fubu"]     .brand-card__logo,
+.brand-card[data-brand="diginn"]   .brand-card__logo,
+.brand-card[data-brand="minutemaid"] .brand-card__logo,
+.brand-card[data-brand="tribit"]   .brand-card__logo,
+.brand-card[data-brand="carrera"]  .brand-card__logo{
+  height: 60px;
+  max-width: 90%;
+}
+
+@media (max-width: 768px){
+  .brand-card[data-brand="edhardy"]  .brand-card__logo,
+  .brand-card[data-brand="fubu"]     .brand-card__logo,
+  .brand-card[data-brand="diginn"]   .brand-card__logo,
+  .brand-card[data-brand="minutemaid"] .brand-card__logo,
+  .brand-card[data-brand="tribit"]   .brand-card__logo,
+  .brand-card[data-brand="carrera"]  .brand-card__logo{
+    height: 44px;
+  }
+}
+
+/* ====== RED DETAILS (GALLERY CARDS) ====== */
+
+.brand-card:hover{
+  box-shadow: 0 18px 38px rgba(216,31,38,0.16);
+}
+
+/* El hint "Open" más brand */
+.brand-card__hint{
+  color: rgba(255,255,255,0.90);
+  border-bottom: 1px solid rgba(216,31,38,0.60);
+  padding-bottom: 2px;
+}
+
+/* ==========================
+   LIGHTBOX – RED & WHITE EDITION
+   ========================== */
+
+/* Panel principal */
+.lightbox__panel{
+  background: #ffffff;
+  border: 2px solid rgba(216,31,38,0.25);
+  box-shadow:
+    0 30px 60px rgba(0,0,0,0.45),
+    0 0 0 6px rgba(216,31,38,0.12);
+}
+
+/* Header logo */
+.lightbox__header{
+  background: #fff;
+  border-bottom: 1px solid rgba(216,31,38,0.25);
+}
+
+/* Botón cerrar – grande y fuerte */
+.lightbox__close{
+  background: transparent;
+  color: var(--red);
+  border: 2px solid rgba(216,31,38,0.45);
+  font-size: 28px;       /* tamaño de la X */
+  font-weight: 900;     /* grosor */
+  width: 46px;
+  height: 46px;
+  line-height: 1;
+  border-radius: 8px;
+}
+
+.lightbox__close:hover{
+  background: rgba(216,31,38,0.08);
+  transform: scale(1.08);
+}
+
+/* Frame del media */
+.media-frame{
+  background: #000;
+  border: 2px solid rgba(216,31,38,0.35);
+}
+
+/* ==========================
+   SWIPER CONTROLS – RED
+   ========================== */
+
+/* Flechas */
+.swiper-button-prev,
+.swiper-button-next{
+  color: var(--red);
+  background: transparent;
+  width: auto;
+  height: auto;
+  box-shadow: none;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+  font-size: 42px;   /* tamaño de la flecha */
+  font-weight: 700;
+}
+
+/* Paginación */
+.swiper-pagination-bullet{
+  background: rgba(216,31,38,0.35);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+  background: var(--red);
+}
+
+/* ==========================
+   BACKDROP – más elegante
+   ========================== */
+
+.lightbox__backdrop{
+  background: radial-gradient(
+    circle at center,
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.85)
+  );
+}

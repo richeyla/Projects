@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "cafe",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "-p", "5510", "."],
+      "port": 5510
+    }
+  ]
+}
